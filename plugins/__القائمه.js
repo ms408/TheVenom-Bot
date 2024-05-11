@@ -1,4 +1,3 @@
-
 import fs from 'fs'
 import fetch from 'node-fetch'
 import { xpRange } from '../lib/levelling.js'
@@ -24,7 +23,7 @@ let { min, xp, max } = xpRange(level, global.multiplier)
 let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length 
 let more = String.fromCharCode(8206)
 let readMore = more.repeat(850)   
-let taguser = '@' + m.sender.split("@https://chat.whatsapp.com/FHhGGIWXxwIJoIkOUU2M6o")[0]
+let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 let str = `
 *☢︎︎☠︎︎📆تاريخ:* ${date}
 *☢︎︎☠︎︎🕛وقت نشط:* ${uptime}
